@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Eagle | Editing & Publication Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold-primary: #D4AF37;
+            --gold-light: #F9E498;
+            --dark-bg: #0D0D0D;
+            --dark-surface: #1A1A1A;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: #E5E5E5;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gold-text {
+            color: var(--gold-primary);
+            background: linear-gradient(to bottom right, #F9E498 0%, #D4AF37 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .gold-button {
+            background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+            color: #000;
+            transition: all 0.3s ease;
+        }
+
+        .gold-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+            background: linear-gradient(135deg, #F9E498 0%, #D4AF37 100%);
+        }
+
+        .glass-card {
+            background: var(--dark-surface);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            border-radius: 8px;
+        }
+
+        .eagle-logo {
+            filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.4));
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Hover effects for the work link */
+        .work-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .work-card:hover {
+            background: #1c1c1c;
+            border-left-color: #F9E498;
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Hero Section -->
+    <header class="py-20 px-6 border-b gold-border">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mb-8 inline-block eagle-logo">
+                <!-- LOGO SECTION: Replace 'logo.png' with your actual logo file path -->
+                <img src="logo.png" alt="Circular Eagle Logo" class="h-24 md:h-32 w-auto mx-auto object-contain" onerror="this.style.display='none'; this.nextURI.style.display='flex';" id="mainLogo">
+                <!-- Fallback if image is missing -->
+                <div id="logoFallback" class="w-24 h-24 border-2 border-[#D4AF37] rounded-full flex items-center justify-center text-[#D4AF37] text-[10px] font-bold p-2 uppercase text-center leading-tight">
+                    Your Logo<br>Here
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 gold-text uppercase tracking-tighter">
+                Circular Eagle
+            </h1>
+            <p class="text-xl md:text-2xl font-light tracking-wide text-gray-400">
+                Editing & Publication Services
+            </p>
+            <div class="mt-4 h-1 w-24 bg-[#D4AF37] mx-auto"></div>
+            <p class="mt-6 text-gray-300 italic max-w-lg mx-auto">
+                Editing, formatting, and preparation of digital publications.
+            </p>
+        </div>
+    </header>
+
+    <!-- Purpose Statement -->
+    <section class="py-16 px-6 bg-[#111]">
+        <div class="max-w-3xl mx-auto text-center leading-relaxed">
+            <p class="text-lg md:text-xl text-gray-300">
+                This page serves as the official reference for works edited, formatted, or prepared under <span class="text-[#D4AF37] font-semibold">Circular Eagle</span>. 
+                It is referenced in published materials for verification, corrections, and publication-related enquiries.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Offered -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center gold-text">Core Services</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Editing -->
+                <div class="glass-card p-8 hover:border-opacity-50 transition-all">
+                    <h3 class="text-xl font-bold mb-4 text-[#D4AF37] border-b border-gray-800 pb-2">Editing</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center"><span class="mr-2 text-[#D4AF37]">/</span> Proofreading</li>
+                        <li class="flex items-center"><span class="mr-2 text-[#D4AF37]">/</span> Structural editing</li>
+                        <li class="flex items-center"><span class="mr-2 text-[#D4AF37]">/</span> Language clarity</li>
+                        <li class="flex items-center"><span class="mr-2 text-[#D4AF37]">/</span> Consistency checks</li>
+                    </ul>
+                </div>
+
+                <!-- Formatting -->
+                <div class="glass-card p-8">
+                    <h3 class="text-xl font-bold mb-4 text-[#D4AF37] border-b border-gray-800 pb-2">Formatting</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center"><span class="mr-2 text-[#D4AF37]">/</span> eBook (PDF, EPUB)</li>
+                        <li class="flex items-center"><span class="mr-2 text-[#D4AF37]">/</span> Document layout</li>
+                        <li class="flex items-center"><span class="mr-2 text-[#D4AF37]">/</span> Typography</li>
+                        <li class="flex items-center"><span class="mr-2 text-[#D4AF37]">/</span> Spacing optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Publication Preparation -->
+                <div class="glass-card p-8">
+                    <h3 class="text-xl font-bold mb-4 text-[#D4AF37] border-b border-gray-800 pb-2">Preparation</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center"><span class="mr-2 text-[#D4AF37]">/</span> Title pages</li>
+                        <li class="flex items-center"><span class="mr-2 text-[#D4AF37]">/</span> Copyright pages</li>
+                        <li class="flex items-center"><span class="mr-2 text-[#D4AF37]">/</span> Front matter setup</li>
+                        <li class="flex items-center"><span class="mr-2 text-[#D4AF37]">/</span> Back matter setup</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Handled -->
+    <section class="py-20 px-6 bg-[#0a0a0a]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-8 gold-text uppercase tracking-widest text-center">Selected Works</h2>
+            
+            <!-- Link to Selar -->
+            <a href="https://selar.co/rightcustomers" target="_blank" class="block group">
+                <div class="work-card border-l-4 border-[#D4AF37] pl-6 py-6 bg-[#151515] relative overflow-hidden">
+                    <div class="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-[#D4AF37]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </div>
+                    <p class="text-gray-400 text-xs uppercase tracking-widest mb-1 group-hover:text-[#D4AF37] transition-colors">eBook, 2026 Edition • Click to View</p>
+                    <h4 class="text-xl font-semibold text-white group-hover:text-[#F9E498] transition-colors decoration-[#D4AF37]">Finding the Right Customers: A Practical Guide for Online Business Owners</h4>
+                    <p class="text-gray-500 mt-2">Authored by <span class="text-gray-300">Qoleed Alli</span></p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Rights & Responsibility -->
+    <section class="py-16 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="glass-card p-8 border-dashed">
+                <p class="text-gray-400 italic">
+                    Circular Eagle provides editing and formatting services only. 
+                    Intellectual property rights remain with the original author unless otherwise stated.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-24 px-6 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 gold-text">Start Your Project</h2>
+            <p class="text-gray-400 mb-10">For editing, formatting, or publication-related enquiries:</p>
+            
+            <button onclick="contactViaWhatsApp()" class="gold-button px-10 py-4 rounded-full font-bold text-lg uppercase tracking-widest">
+                Request Services
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-gray-900 text-center">
+        <p class="text-gray-500 text-sm mb-2">© 2026 Circular Eagle</p>
+        <p class="text-[#D4AF37] text-xs uppercase tracking-[0.3em]">Editing & Publication Services</p>
+    </footer>
+
+    <script>
+        function contactViaWhatsApp() {
+            // Update the realNumber variable below with your actual digits (e.g., "2348123456789")
+            const realNumber = "2349079294834"; 
+            
+            const message = encodeURIComponent("Hello Circular Eagle, I am interested in your editing and publication services.");
+            const url = `https://wa.me/${realNumber}?text=${message}`;
+            window.location.href = url;
+        }
+
+        // Logic to handle logo fallback display if image is not found
+        const img = document.getElementById('mainLogo');
+        const fallback = document.getElementById('logoFallback');
+        img.onerror = function() {
+            img.style.display = 'none';
+            fallback.style.display = 'flex';
+        };
+        // If image source is empty or default, show fallback immediately
+        if (!img.getAttribute('src') || img.getAttribute('src') === 'logo.png') {
+            fallback.style.display = 'flex';
+            img.style.display = 'none';
+        } else {
+            fallback.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
